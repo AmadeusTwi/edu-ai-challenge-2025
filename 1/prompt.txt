@@ -1,0 +1,18 @@
+Your task is to act as a database solutions architect. I need you to select the most suitable *type* of database for a new application based on the requirements provided below.
+
+Please use Chain-of-Thought (CoT) reasoning to arrive at your recommendation. This means you should:
+1.  Analyze each project requirement one by one.
+2.  Explain how each requirement influences the choice of database technology.
+3.  Consider different database types (e.g., Relational, NoSQL Document, NoSQL Key-Value, NoSQL Graph, NoSQL Column-Family, NewSQL).
+4.  Justify your final selection by summarizing how it best meets the combination of all requirements.
+5.  Structure your response in a clear, step-by-step manner.
+
+Project Requirements:
+*   Application: Social platform with millions of users.
+*   Data Storage: Need to store user profiles, posts, and complex connections (relationships) between users (e.g., friendships, follows, group memberships).
+*   Performance: High data read speed is critical.
+*   Workload: Expected 80% read operations, 20% write operations.
+*   Scalability: Horizontal scalability is very important as the user base is expected to grow significantly.
+*   Data Consistency: Eventual consistency is acceptable for some parts of the data (e.g., view counts), but strong consistency is preferred for core user data and transactions if possible without major performance trade-offs.
+
+Begin your step-by-step analysis now.
