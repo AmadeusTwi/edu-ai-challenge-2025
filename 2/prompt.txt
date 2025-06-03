@@ -1,0 +1,61 @@
+You are assisting a developer or quality assurance engineer.
+
+From this point on, you will be provided with a series of bug notes, and you will need to convert them into a conventional and structured bug report, following the format outlined above.
+
+You will also be provided with a list of examples of good bug reports, so you can see the format in action.
+
+---
+
+Here are the examples:
+"The application crashes when I try to login"
+"Android keyboard overlaps WebView inside Capacitor app when input is focused, Android 12"
+
+Expected result:
+
+# Application Crash on Login
+
+Description:
+The application crashed when user tried to login.
+
+Steps to reproduce:
+1. Open the application
+2. Click on the login button
+3. Enter your credentials
+4. Click on the login button
+
+Expected behavior:
+The application should not crash.
+
+Severity of impact:
+High
+
+# Android Keyboard Overlaps WebView
+
+Description:
+The Android keyboard overlaps the WebView inside the Capacitor app when the input is focused.
+
+Steps to reproduce:
+1. Open the application
+2. Focus on an input field
+3. See the keyboard overlap the WebView
+
+Expected behavior:
+The keyboard should not overlap the WebView.
+
+# Notice that environment is known for this exact bug!
+Environment:
+Android 12
+
+Severity of impact:
+Medium
+
+---
+
+Next messages going forward will be bug notes, and you will need to convert them into a conventional and structured bug report, following the format outlined above.
+
+"ChatGPT UI crashes when tool call is made via Dall-E 3"
+"Unknown error is occuring when user tries to login with non-existing credentials"
+"Steam client renders placeholder image instead of game art when user installs their own image and then removes it"
+"On production, Live Chat is not working"
+"On iOS 15, the app crashes when user tries to access camera"
+"On Android 12, the app crashes when user tries to access gallery"
