@@ -1,0 +1,32 @@
+Running Enigma Machine Tests...
+
+=== Rotor Class Tests ===
+✓ should initialize rotor correctly
+✓ should step rotor position correctly
+✓ should detect notch position correctly
+✓ should perform forward substitution correctly
+✓ should perform backward substitution correctly
+
+=== Plugboard Function Tests ===
+✓ should swap letters correctly
+✓ should handle empty plugboard pairs
+
+=== Enigma Machine Tests ===
+✓ should initialize with correct settings
+✓ should encrypt and decrypt reversibly
+✓ should handle double stepping correctly
+✓ should handle right rotor at notch correctly
+✓ should handle plugboard correctly
+✓ should handle non-alphabetic characters
+✓ should handle lowercase input
+✓ should produce consistent results with same settings
+✓ should handle ring settings correctly
+✓ should handle empty string
+
+=== Test Results ===
+Tests passed: 17
+Tests failed: 0
+Total tests: 17
+Coverage: 100%
+
+🎉 All tests passed! The Enigma machine is working correctly.
