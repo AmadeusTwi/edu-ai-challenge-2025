@@ -95,11 +95,6 @@ const game = new SeaBattleGame({
 });
 ```
 
-
-## License
-
-MIT License
-
 ## Refactoring Notes
 
 This project was refactored and optimized from a monolithic JavaScript file to a modern, modular architecture. See `refactoring.md` for detailed information about the transformation process. 
