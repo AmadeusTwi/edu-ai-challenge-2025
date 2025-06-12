@@ -1,0 +1,76 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Cross-Platform File Path Handling
+
+## Overview
+All Node.js projects must support proper file path handling for both MacOS/Linux and Windows environments to ensure consistent behavior across different operating systems.
+
+## Common Issues and Solutions
+
+### ES Module Entry Point Detection
+When using ES modules with `import.meta.url` for entry point detection, never use string concatenation to compare file paths and URLs. This approach fails on Windows due to path separator differences and URL formatting.
+
+**❌ Incorrect - Will fail on Windows:**
+```javascript
+if (import.meta.url === `file://${process.argv[1]}`) {
+  main();
+}
+```
+
+**✅ Correct - Cross-platform compatible:**
+```javascript
+import { pathToFileURL } from 'url';
+
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main();
+}
+```
+
+**Example Implementation:** See [7/src/index.js](mdc:7/src/index.js) for a working example.
+
+### File Path Operations
+When working with file paths in Node.js:
+
+1. **Always use the `path` module** for path operations:
+   ```javascript
+   import path from 'path';
+   const fullPath = path.join(__dirname, 'subfolder', 'file.txt');
+   ```
+
+2. **Use `path.resolve()` for absolute paths:**
+   ```javascript
+   const absolutePath = path.resolve('./relative/path');
+   ```
+
+3. **Use forward slashes in import statements** - Node.js handles conversion automatically:
+   ```javascript
+   import { MyClass } from './path/to/module.js'; // Works on all platforms
+   ```
+
+### URL and File Path Conversion
+For converting between file paths and URLs:
+
+- **Path to URL:** Use `pathToFileURL()` from the 'url' module
+- **URL to Path:** Use `fileURLToPath()` from the 'url' module
+
+```javascript
+import { pathToFileURL, fileURLToPath } from 'url';
+
+const fileUrl = pathToFileURL('/path/to/file');
+const filePath = fileURLToPath(new URL('file:///path/to/file'));
+```
+
+## Testing Requirements
+All projects should be tested on both Windows and Unix-like systems to ensure cross-platform compatibility. Pay special attention to:
+
+- Entry point detection
+- File path resolution
+- Import/export paths
+- File system operations
+
+## Enforcement
+This rule applies to all new projects and should be considered when refactoring existing code. Any file path operations should follow these cross-platform best practices.
+
