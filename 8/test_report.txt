@@ -1,0 +1,61 @@
+
+> t3-data-validation-library@1.0.0 test
+> jest --coverage
+
+PASS src/validator.test.ts
+  Validation Library
+    Schema.string()
+      ✓ should validate valid strings (2 ms)
+      ✓ should validate empty strings (1 ms)
+      ✓ should reject non-strings (1 ms)
+      ✓ should validate minimum length constraint
+      ✓ should validate maximum length constraint
+      ✓ should validate both min and max constraints
+      ✓ should validate pattern constraint
+      ✓ should support withMessage
+    Schema.number()
+      ✓ should validate valid numbers
+      ✓ should reject NaN (1 ms)
+      ✓ should reject non-numbers
+      ✓ should validate minimum value constraint
+      ✓ should validate maximum value constraint
+      ✓ should validate both min and max constraints
+    Schema.boolean()
+      ✓ should validate valid booleans
+      ✓ should reject non-booleans (1 ms)
+    Schema.date()
+      ✓ should validate valid dates (1 ms)
+      ✓ should reject invalid dates (2 ms)
+    Schema.array()
+      ✓ should validate arrays with valid elements
+      ✓ should validate empty arrays
+      ✓ should reject non-arrays (1 ms)
+      ✓ should report errors with element indices
+      ✓ should validate nested arrays
+    Schema.object()
+      ✓ should validate objects with valid schema (1 ms)
+      ✓ should reject non-objects
+      ✓ should report errors with field names
+      ✓ should validate nested objects (1 ms)
+      ✓ should handle missing properties as undefined
+    optional() modifier
+      ✓ should allow null values
+      ✓ should allow undefined values (1 ms)
+      ✓ should validate non-null/undefined values with wrapped validator
+      ✓ should work with complex validators (1 ms)
+    Complex nested validation scenarios
+      ✓ should validate complex nested structures
+      ✓ should provide detailed error messages for complex structures (1 ms)
+      ✓ should recreate original schema.js example
+
+--------------|---------|----------|---------|---------|-------------------
+File          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+--------------|---------|----------|---------|---------|-------------------
+All files     |   93.33 |    97.91 |      95 |   93.33 |                   
+ validator.ts |   93.33 |    97.91 |      95 |   93.33 | 215-218,236-239   
+--------------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       35 passed, 35 total
+Snapshots:   0 total
+Time:        0.755 s, estimated 1 s
+Ran all test suites.

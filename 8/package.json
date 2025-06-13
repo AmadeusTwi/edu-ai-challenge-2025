@@ -1,0 +1,26 @@
+{
+  "name": "t3-data-validation-library",
+  "version": "1.0.0",
+  "description": "A comprehensive data validation library for TypeScript/JavaScript applications",
+  "main": "dist/validator.js",
+  "types": "dist/validator.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --coverage",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "validation",
+    "typescript",
+    "data",
+    "schema"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  }
+}
