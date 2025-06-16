@@ -14,34 +14,28 @@ When a user provides a service name or description, generate a detailed Markdown
 # [Service Name] - Service Analysis Report
 
 ## Brief History
-Provide a concise overview of the service's founding, key milestones, and evolution.
+Provide founding year, key milestones, and evolution timeline of the service.
 
-## Core Features and Functionality
-Detail the main features, capabilities, and what the service does for users.
+## Target Audience
+Describe the primary user segments and demographics that the service serves.
 
-## Target Market and User Base
-Describe the primary target audience, user demographics, and market positioning.
+## Core Features
+List the top 2–4 key functionalities that define what the service does.
 
-## Business Model and Revenue Streams
-Explain how the service generates revenue and its business model approach.
+## Unique Selling Points
+Identify the key differentiators that set this service apart from competitors.
 
-## Technology Stack and Architecture
-Discuss the underlying technology, platforms, and technical approach (when publicly known).
+## Business Model
+Explain how the service makes money and generates revenue.
 
-## Competitive Landscape
-Identify main competitors and positioning within the market space.
+## Tech Stack Insights
+Provide any available information or hints about the technologies and platforms used.
 
-## Recent Developments and Updates
-Highlight recent product updates, funding rounds, partnerships, or significant changes.
-
-## Market Position and Growth
-Analyze current market position, growth trends, and business performance indicators.
-
-## Strengths and Advantages
-List key competitive advantages and what the service does particularly well.
+## Perceived Strengths
+Highlight mentioned positives, standout features, and competitive advantages.
 
 ## Perceived Weaknesses
-Identify potential challenges, limitations, or areas for improvement.
+Identify cited drawbacks, limitations, or areas that need improvement.
 
 Guidelines:
 - Use factual, well-researched information
