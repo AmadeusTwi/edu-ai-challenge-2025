@@ -1,0 +1,25 @@
+{
+  "name": "service-analyzer-js",
+  "version": "1.0.0",
+  "description": "AI-powered service analyzer using Vercel AI SDK and OpenAI",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "ai",
+    "service-analysis",
+    "openai",
+    "vercel-ai-sdk",
+    "business-intelligence"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ai": "4.3.16",
+    "@ai-sdk/openai": "1.3.22",
+    "dotenv": "^16.5.0"
+  }
+}
