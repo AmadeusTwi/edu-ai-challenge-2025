@@ -1,0 +1,46 @@
+{
+  "word_count": 982,
+  "speaking_speed_wpm": 131,
+  "frequently_mentioned_topics": [
+    {
+      "topic": "chest pain",
+      "mentions": 11
+    },
+    {
+      "topic": "heart attack",
+      "mentions": 6
+    },
+    {
+      "topic": "symptoms",
+      "mentions": 6
+    },
+    {
+      "topic": "pain description",
+      "mentions": 5
+    },
+    {
+      "topic": "medical history",
+      "mentions": 4
+    },
+    {
+      "topic": "family history",
+      "mentions": 3
+    },
+    {
+      "topic": "medications",
+      "mentions": 3
+    },
+    {
+      "topic": "tests (ECG, blood work)",
+      "mentions": 3
+    },
+    {
+      "topic": "patient background (work, study, living situation)",
+      "mentions": 3
+    },
+    {
+      "topic": "pain triggers and relief",
+      "mentions": 3
+    }
+  ]
+}

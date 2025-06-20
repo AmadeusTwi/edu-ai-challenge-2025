@@ -1,0 +1,26 @@
+{
+  "name": "audio-processing-cli",
+  "version": "1.0.0",
+  "description": "A CLI application that transcribes audio files, summarizes content, and provides detailed analytics",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "audio",
+    "transcription",
+    "whisper",
+    "openai",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "openai": "^5.5.1",
+    "dotenv": "^16.5.0",
+    "yargs": "^18.0.0",
+    "fluent-ffmpeg": "^2.1.0"
+  }
+}
